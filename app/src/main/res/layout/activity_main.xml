@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_main"
+    android:background="#ccc">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_above="@+id/menu_bar">
+
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_above="@id/menu_bar"
+           android:id="@+id/content_main">
+
+       </FrameLayout>
+
+   </LinearLayout>
+<View
+    android:layout_width="match_parent"
+   android:background="#bbb"
+    android:layout_height="1dp"
+    android:layout_above="@id/menu_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/menu_bar"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="首页"
+            android:id="@+id/firstpage"
+            android:layout_weight="1"
+            android:gravity="top|center"
+            android:textSize="8sp"
+            android:drawableTop="@drawable/home"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="8sp"
+            android:text="分类阅读"
+            android:id="@+id/subread"
+            android:layout_weight="1"
+            android:gravity="top|center"
+            android:drawableTop="@drawable/read"/>
+       <!--
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="更多内容"
+            android:id="@+id/more"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@mipmap/more"/>
+        -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="我的"
+            android:id="@+id/AboutMe"
+            android:layout_weight="1"
+            android:gravity="top|center"
+            android:textSize="8sp"
+            android:drawableTop="@drawable/about"/>
+    </LinearLayout>
+
+</RelativeLayout>

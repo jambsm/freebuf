@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginLeft="20dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/usercenter_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usercenter_msg1"
+        android:layout_below="@id/usercenter_name"
+        android:text="注册会员 等级："/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usercenter_name"
+        android:layout_toRightOf="@id/usercenter_msg1"
+        android:id="@+id/usercenter_level"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usercenter_msg2"
+        android:layout_below="@id/usercenter_msg1"
+        android:text="注册日期："/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/usercenter_msg2"
+        android:layout_below="@id/usercenter_level"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usercenter_msg2"
+        android:id="@+id/usercenter_msg3"
+        android:text="个人描述："/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usercenter_msg2"
+        android:layout_toRightOf="@id/usercenter_msg3"
+        android:id="@+id/usercenter_detail"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usercenter_edit"
+        android:layout_below="@id/usercenter_msg3"
+        android:text="编辑"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usercenter_sendmsg"
+        android:layout_below="@id/usercenter_msg3"
+        android:layout_toRightOf="@id/usercenter_edit"
+        android:text="发私信"/>
+
+</RelativeLayout>
